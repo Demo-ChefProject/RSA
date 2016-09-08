@@ -1,0 +1,7 @@
+{
+	"name": "rsa",
+	"description": "This role lays down liferay application",
+	"run_list": [
+		"recipe[rsa::rsainstall]"
+		]
+}
