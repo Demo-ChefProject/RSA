@@ -1,6 +1,6 @@
-# liferay Cookbook
+# rsa Cookbook
 
-This cookbook installs and configures liferay for Mission Ceter project.
+This cookbook installs and configures rsa for Mission Ceter project.
 
 
 ## Requirements
@@ -16,7 +16,7 @@ This cookbook installs and configures liferay for Mission Ceter project.
 
 ### Cookbooks
 
-- `liferay` - liferay cookbook to install for Mission Center.
+- `rsa` - rsa cookbook to install for Mission Center.
 
 ## Attributes
 
@@ -26,18 +26,18 @@ check attribites folder for all the defined variables.
 
 ## Usage
 
-### liferay::default
+### rsa::default
 
 TODO: Write usage instructions for each cookbook.
 
 e.g.
-Just include `liferay` in your node's `run_list`:
+Just include `rsa` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[liferay]"
+    "recipe[rsa]"
   ]
 }
 ```
