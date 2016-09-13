@@ -15,13 +15,13 @@ knife upload cookbooks rsa
 
 
 # Bootstrap a node to its chef server
-#knife bootstrap windows winrm 52.23.166.135 --winrm-user Administrator --winrm-password 'd*G%tc9"&"HLK' --node-name Rigil_node_Windows -r 'role[liferay]' -y
+knife bootstrap windows winrm 52.90.146.213 --winrm-user Administrator --winrm-password '?%EW!26tAzW' --node-name Rigil_node_Windows -r 'role[rsa]' -y
 
 #Passing credentials stored as a secure string
-$Pass = cat C:\securestring.txt | convertto-securestring
-$Pegacred = new-object -TypeName System.Management.Automation.PSCredential -argumentlist "Administrator",$pass
+$pass = ConvertTo-SecureString '?%EW!26tAzW' -AsPlainText -Force
+$Pegacred = new-object -TypeName System.Management.Automation.PSCredential -argumentlist "Administrator",$Pass
 #  Create a remote session to the chef node
-$Session = New-PSSession -ComputerName 52.23.166.135 -Credential $Pegacred
+$Session = New-PSSession -ComputerName 52.90.146.213 -Credential $Pegacred
 
 $Script = {powershell.exe chef-client}
 
