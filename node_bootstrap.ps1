@@ -7,7 +7,7 @@ cd C:\Jenkins\workspace\Chef-RSA
 #for jdk
 #sudo knife role from file /home/jenkins/workspace/Chef-apache/roles/apache.rb
 #knife role from file C:\Users\krithi.gnanasekaran\workspace\Chef-Jdk\roles\jdkinstall.rb
-knife role from file C:\Jenkins\workspace\Chef-RSA\roles\liferay.json
+knife role from file C:\Jenkins\workspace\Chef-RSA\roles\rsa.json
 
 
 # Upload cookbooks into Chef Server
